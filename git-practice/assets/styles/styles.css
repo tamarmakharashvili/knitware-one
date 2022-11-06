@@ -1,0 +1,132 @@
+*{ 
+    border:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+header{
+    padding: 20px 30px;
+}
+
+.header-container{
+    display:flex;
+    justify-content: space-between;
+}
+
+.first{
+    color: blueviolet;
+    font-weight:800;
+}
+
+.second{
+    color: rgb(15, 57, 210);
+    font-weight:800;
+    border: 3px solid rgb(255, 0, 111);
+    border-radius: 8px;
+    padding: 10px 30px;
+}
+
+main{
+    padding: 0px 30px;    
+}
+
+h2{
+    justify-content: center;
+    display: flex;
+
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    "one one two"
+    "one one three";
+    gap: 10px;
+}
+
+.photo1{
+    grid-area: one;
+    position: relative;    
+}
+
+.image1{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+    }
+
+.rating1 {
+    position:absolute;
+    top: 10px;
+    left: 10px;
+    background-color: white;
+    border-radius: 8px;
+    padding: 0px 5px;
+}
+
+.photo1-text{
+    position:absolute;
+    bottom: 20px;
+    left: 10px;
+    color: white;
+}
+
+.photo2{
+    grid-area: two;
+    position: relative;
+}
+
+.image2{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 25px;    
+}
+
+.rating2{
+    position:absolute;
+    top: 10px;
+    left: 10px;
+    background-color: white;
+    border-radius: 8px;
+    padding: 0px 5px;
+}
+
+.photo2-text{
+    position:absolute;
+    bottom: 20px;
+    left: 10px;
+    color: rgb(13, 58, 170);
+}
+    
+
+.photo3{
+    grid-area: three;
+    position: relative;
+}
+
+.image3{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+    }
+.rating3{
+    position:absolute;
+    top: 10px;
+    left: 10px;
+    background-color: white;
+    border-radius: 8px;
+    padding: 0px 5px;
+}
+
+.photo3-text{
+    position:absolute;
+    bottom: 20px;
+    left: 10px;
+    color: rgb(13, 58, 170);
+}
+
